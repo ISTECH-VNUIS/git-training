@@ -1,0 +1,84 @@
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.8); /* Black with 80% opacity */
+    height: 75px;
+    width: 100%;
+    position: fixed; /* Make the header fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the header is above other content */
+    transition: top 0.3s; /* Smooth transition for hiding/showing */
+}
+
+#menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+a, .menu-button {
+    color: white;
+    margin: 0 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+a:hover, .menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#search {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#background-container {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow */
+    position: relative;
+}
+
+#background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
